@@ -1,0 +1,182 @@
+*{
+	box-sizing: border-box;
+ }
+
+body{
+	font-family: 'Poppins',sans-serif;
+	font-size: 14px;
+	color: rgb(32, 32, 32);
+	font-weight: bold;
+}
+
+header{
+	background-color: #b6aec9;
+	height: 3em;
+	color: #FFF;
+	margin-bottom: 1em;
+}
+
+header h1{
+	font-size: 2em;
+	display:inline-block;
+	vertical-align:	middle;
+	font-weight: bold;
+}
+header h2{
+	font-size: 2em;
+	display:inline-block;
+	vertical-align:	middle;
+}
+
+header.container:before{
+	content: '';
+	display:inline-block;
+	height: 100%;
+	vertical-align:	middle;
+}
+
+.container{
+	width: 60%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+section{
+	margin: 2em 0;
+	overflow: hidden;
+}
+
+section h2{
+	font-size: 2em;
+	display: block;
+	padding-bottom: .5em;
+	border-bottom: 1px solid #ccc;
+	margin-top: 10px;
+	margin-bottom: .5em;
+}
+
+table{
+	width: 100%;
+	margin-bottom : .5em;
+    table-layout: fixed;
+
+}
+
+td, th {
+	padding: .7em;
+	margin: 0;
+	border: 1px solid rgb(68, 67, 67);
+	text-align: center;
+}
+
+th{
+	font-weight: bold;
+	background-color: #e2e0e7;
+}
+
+label{
+	display: block;
+	margin-bottom: .2em;	
+}
+
+.campo{
+	margin: 0;
+	padding-bottom: 1em;
+	border: 1px solid #ccc;
+	padding: .7em;
+	width: 95.6%;
+	color:rgb(32, 32, 32);
+}
+
+.campo-medio{
+	display: inline-block;
+	padding-right: .5em;
+	color:rgb(32, 32, 32);	
+}
+
+.grupo{
+	width: 32%;
+	display: inline-block;
+	padding: 10px 0px;
+}
+
+button{
+	padding: .7em 2em;
+	border: 0px;
+	font-size: 1.1em;
+	cursor: pointer;
+	margin: 0;
+	margin-top: -3px;
+	color: rgb(248, 247, 247);
+	font-weight: bold;
+	font-family: 'Poppins',sans-serif;
+	background-color:#a598c5;
+	border-radius:10px;
+	width: 20%;
+    display: block;
+    clear: both;
+    margin: 10px 0px;
+
+}
+
+button:active{
+	margin-top:0px;
+	border: 0;
+}
+
+button[disabled=disabled], button:disabled {
+    background-color: rgb(148, 148, 148);
+	border-color: darkgray;
+
+}
+
+.adicionar-paciente{
+    margin-top: 30px;
+}
+
+.campo-invalido{
+	border: 1px solid red;
+}
+
+.paciente-invalido{
+	background-color: rgb(241, 163, 163);
+}
+
+ul#mensagens-erro{
+	text-align: center;
+	color:lightcoral;
+	font-weight: bold;
+	
+}
+
+input{
+	font-family: 'Poppins',sans-serif;
+	font-weight: bold;
+	border-radius: 10px;
+	outline: none;
+	color:rgb(32, 32, 32);
+	margin-bottom: 30px;
+	padding-bottom: 1em;
+	border: 1px solid #ccc;
+	padding: .5em;
+	width: 60%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+input#filtrar-tabela{
+	background: url(person_search-black-18dp.svg);
+	background-repeat: no-repeat;
+	background-position: 0%;
+	padding-inline-start: 22px;   
+}
+
+.fadeOut{
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.hide{
+	display: none;
+}
